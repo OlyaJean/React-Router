@@ -1,0 +1,5 @@
+To create error 404 page in case the path is typed in wrong
+
+create a new component with h1 tage 404. Page is not found.
+
+<Route path='*' element={NotFound}/>

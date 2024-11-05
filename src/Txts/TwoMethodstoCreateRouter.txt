@@ -1,0 +1,36 @@
+A React Router allows you to go through different path of url without reloading the webpage
+After installing the vite package, run: npm install react-router-dom
+in main.jsx import {BrowserRouter} from 'react-router-dom'
+And wrap <App/> in <BrowserRouter/> instead of <StrictMode/>
+Now we have a support from router
+In app.jsx import {Routes,Route} from 'react-router-doem'
+
+in the return segment of app.jsx leave navbar outside router, so it will be desplayed on all the pages
+Below it create <Routes>
+<Route path='/' element={<Home/>}/>
+<Route path='/contacts' element={<Contacts/>}/>
+<Routes/>
+
+in Navbar.jsx import {Link} from 'react-router-dom'
+
+Wrap <li> tags with <Link to='/'><li>Home<li></Link>
+provide page path in to=''
+
+
+Another way to create Router:
+Create RootLayout.jsx file.
+In app.jsx create const router = createBrowserRouter(createRoutesFromElements(
+    <Route path='/' element={<RoutLayout/>}> // we are wrapping other routes
+      <Route index element={Home}/> // index instead of path so it load home page on index url
+      <Route path='about' element={<About/>}/> // we provided slash on the wrapper route, so we dont need here
+    </Route>
+))
+in  return (
+    <RouterProvider router={router}/>
+)
+
+And move Navbar from app.jsx into RootLayout.jsx so it will be mounted on load
+
+Under Navbar import <Outlet/>
+
+Just wrap Outlet in div to style all the pages

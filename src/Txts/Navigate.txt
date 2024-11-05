@@ -1,0 +1,14 @@
+Navigate Hook
+
+const navigate = useNavigate()
+
+In return (
+    <button onclick={()=>navigate('/about')}>
+)
+
+the button will navigate to the page 
+
+
+Outlet shows where the child element should be displayed
+
+child path has no slash

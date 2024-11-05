@@ -1,0 +1,7 @@
+Using the first method of creating React Router, we used <Link> tag to wrap ours <li> tags
+
+If we will use <NavLink> instead it will track our path we inspect out elements. 
+any time we press on the specific nav list, that nav li element will get class='active' so we can style it.
+
+in .css add a.active{color:red}
+every time you press any nav li , it will turn red

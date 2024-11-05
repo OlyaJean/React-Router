@@ -1,0 +1,92 @@
+*{margin:0;
+padding:0;
+box-sizing: border-box;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+background-color: rgb(230, 230, 229);}
+
+nav{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+  
+}
+nav span{
+
+    text-align: center;
+    line-height:1.5rem;
+}
+nav span i{
+    font-size: 2.5rem;
+    color:chocolate
+}
+
+nav ul{
+   display: flex;
+   align-items: center;
+   background-color: #fff;
+   border-radius: 40px;
+   padding: 0 10px;
+   box-shadow: 0 0 5px 5px rgba(201, 201, 201, 0.637);
+    
+}
+nav ul li{
+    margin: 0 10px;
+    list-style: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+nav button{
+    padding:0 30px;
+    list-style: none;
+    background-color: #000;
+    color:#fff;
+    border: 0;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 5px 5px rgba(201, 201, 201, 0.637);
+    cursor: pointer;
+
+}
+nav a{ background: transparent;
+text-decoration: none;
+color:#000}
+
+.active{
+    color:chocolate
+}
+
+.page{
+  width:100%;
+  text-align: center;
+  margin:20px 0;
+  font-size: 1.5rem;
+  padding: 0 40px;
+
+}
+.page p{text-align: left;
+margin-top: 20px;}
+.nest button{
+    padding:0 30px;
+    list-style: none;
+    background-color: #000;
+    color:#fff;
+    border: 0;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 5px 5px rgba(201, 201, 201, 0.637);
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.outlet{
+display: flex;
+justify-content: center;
+}
+
+@media (max-width:500px){
+    nav{font-size: 0.7rem;}
+    nav button{padding:0 20px}
+    .page{font-size: 1rem;}
+}
