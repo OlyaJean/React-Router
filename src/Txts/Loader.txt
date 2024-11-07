@@ -1,0 +1,4 @@
+React loader is used to fetch data before the router is rendered
+
+To turn json file into json server to fetch data:
+npx json-server --watch data.json --port 5000

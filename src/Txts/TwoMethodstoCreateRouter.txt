@@ -34,3 +34,5 @@ And move Navbar from app.jsx into RootLayout.jsx so it will be mounted on load
 Under Navbar import <Outlet/>
 
 Just wrap Outlet in div to style all the pages
+
+And remove BrowserRouter wrap from main.jsx

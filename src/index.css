@@ -9,6 +9,7 @@ nav{
     display:flex;
     justify-content: space-between;
     padding: 20px 20px;
+    font-size: 0.6em;
   
 }
 nav span{
@@ -24,6 +25,7 @@ nav span i{
 nav ul{
    display: flex;
    align-items: center;
+   justify-content: center;
    background-color: #fff;
    border-radius: 40px;
    padding: 0 10px;
@@ -31,7 +33,7 @@ nav ul{
     
 }
 nav ul li{
-    margin: 0 10px;
+    margin: 0 6px;
     list-style: none;
     background-color: #fff;
     cursor: pointer;
@@ -53,6 +55,21 @@ nav a{ background: transparent;
 text-decoration: none;
 color:#000}
 
+.friendsList{
+   
+    display: flex;
+    gap:10px;
+   
+}
+.friendsList p{
+    background-color: #fff;
+    color:chocolate;
+    padding: 10px;
+    border-radius: 20px;
+}
+.friendsList a{
+    text-decoration: none;
+}
 .active{
     color:chocolate
 }
@@ -85,8 +102,13 @@ display: flex;
 justify-content: center;
 }
 
-@media (max-width:500px){
-    nav{font-size: 0.7rem;}
-    nav button{padding:0 20px}
+@media (max-width:700px){
+    nav{font-size: 1rem;
+    flex-direction: column;
+    gap:20px
+}
+nav ul{padding: 20px;}
+    nav button{padding:20px;
+    font-size: 1rem;}
     .page{font-size: 1rem;}
 }

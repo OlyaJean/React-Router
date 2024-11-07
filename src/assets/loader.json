@@ -1,0 +1,26 @@
+{"roles":[
+    {"id":1,
+     "name":"Rachel",
+     "occupation":"Waitress" 
+    },
+    {"id":2,
+    "name":"Monica",
+    "occupation":"Chef"
+    },
+    {"id":3,
+    "name":"Ross",
+    "occupation":"Paleontologist"
+    },
+    {"id":4,
+    "name":"Joey",
+    "occupation":"Actor"
+    },
+    {"id":5,
+    "name":"Chandeler",
+    "occupation":"Manager"
+    },
+    {"id":6,
+    "name":"Phoebe",
+    "occupation":"Musician"
+    }
+]}
